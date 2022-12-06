@@ -1,5 +1,5 @@
-![TripPlanner Logo](./public/img/logo-dark.svg#gh-light-mode-only)
-![TripPlanner Logo](./public/img/logo-light.svg#gh-dark-mode-only)
+![TripPlanner Logo](./public/img/logo-dark.svg#gh-dark-mode-only)
+![TripPlanner Logo](./public/img/logo-light.svg#gh-light-mode-only)
 
 This is [TripPlanner](https://tripplannerx.web.app/), a quick project for Lendis, created with [`NEXTJS`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), Typescript.
 
