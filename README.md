@@ -1,5 +1,5 @@
-![TripPlanner Logo](https://raw.githubusercontent.com/leyume/tp/7f67d1658457ec587f39fc9a8c34b0c884974706/public/img/logo-light.svg#gh-dark-mode-only)
-![TripPlanner Logo](https://raw.githubusercontent.com/leyume/tp/7f67d1658457ec587f39fc9a8c34b0c884974706/public/img/logo-dark.svg#gh-light-mode-only)
+![TripPlanner Logo](https://raw.githubusercontent.com/leyume/tp/7f67d1658457ec587f39fc9a8c34b0c884974706/public/img/logo-light.svg#gh-light-mode-only)
+![TripPlanner Logo](https://raw.githubusercontent.com/leyume/tp/7f67d1658457ec587f39fc9a8c34b0c884974706/public/img/logo-dark.svg#gh-dark-mode-only)
 
 This is [TripPlanner](https://tripplannerx.web.app/), a quick project for Lendis, created with [`NEXTJS`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), Typescript.
 
