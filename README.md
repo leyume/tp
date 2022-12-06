@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/leyume/tp/7f67d1658457ec587f39fc9a8c34b0c884974706/public/img/logo-light.svg" />
 
-This is [TripPlanner](https://tripplannerx.web.app/), a quick project for Lendis, created with [`NEXT JS`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), Typescript.
+This is [TripPlanner](https://tripplannerx.web.app/), a quick project for Lendis, created with [`NEXTJS`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), Typescript.
 
 ## Getting Started
 
