@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://raw.githubusercontent.com/leyume/tp/7f67d1658457ec587f39fc9a8c34b0c884974706/public/img/logo-light.svg" />
+
+This is [TripPlanner](https://tripplannerx.web.app/), a quick project for Lendis, created with [`NEXT JS`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), Typescript.
 
 ## Getting Started
 
 First, run the development server:
+Rename .env-sample to .env and edit content as required (update with required API)
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:8502](http://localhost:8502) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## About
+This project is about a trip planner, built on top of the Deutsche Bahn’s open API. The [wrapper API](https://v5.db.transport.rest/) from [transport.rest](https://transport.rest/) was used instead of Deutsche Bahn’s official API.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+A user can specify the name of the city or the station s/he wants to start his/her journey, along with the day and time, and get back the journey’s details.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The journey can occur with all available modes of transportation, and the language used for all messaging is in English.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Few features where included:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Mobile responsive.
+- Dark and Light Mode.
+- Date/Time Picker.
+- Deploy to Firebase.
 
-## Deploy on Vercel
+You can check out [TripPlanner](https://tripplannerx.web.app/) for a preview!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy on Firebase
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Google's Firebase](https://console.firebase.google.com/) was the choose for deployment.
+Here are simple steps to deploy to Firebase.
+
+1. Create an firebase account on [Firebase](https://console.firebase.google.com/) (you will already have one if you own a gmail account)
+2. Locally install firebase in the project
+```bash
+npm i firebase-tools -D
+```
+3. Login into your firebase account from the project
+```bash
+node_modules/.bin/firebase login
+```
+
+4. Initialise hosting
+```bash
+node_modules/.bin/firebase init hosting
+```
+5. Follow instructions of the subsequent prompts, and answer accordingly
+```bash
+create or use existing project, eg - tripplanner or whatever name you like
+
+? What do you want to use as your public directory? out
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? No
+? File out/404.html already exists. Overwrite? Yes
+✔  Wrote out/404.html
+? File out/index.html already exists. Overwrite? Yes
+✔  Wrote out/index.html
+```
+
+6. Build your project
+```bash
+npm run build
+```
+
+7. Deploy
+```bash
+node_modules/.bin/firebase deploy --only hosting
+```
